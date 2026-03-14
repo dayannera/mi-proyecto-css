@@ -1,0 +1,166 @@
+/* Estilos generales del cuerpo de la página */
+body{
+
+/* Imagen de fondo tipo biblioteca */
+background-image:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+
+/* Hace que la imagen cubra toda la pantalla */
+background-size:cover;
+
+/* Hace que el fondo no se mueva con el scroll */
+background-attachment:fixed;
+
+/* Centra la imagen de fondo */
+background-position:center;
+
+/* Elimina márgenes por defecto del navegador */
+margin:0;
+
+/* Elimina padding por defecto */
+padding:0;
+
+/* Fuente base para todo el texto */
+font-family:Arial;
+
+}
+
+
+/* Estilo del título principal */
+h1{
+
+/* Centra el texto */
+text-align:center;
+
+/* Tipografía del título */
+font-family:Copperplate, serif;
+
+/* Color del texto */
+color:#5d4037;
+
+/* Fondo amarillo pastel */
+background-color:#fff3cd;
+
+/* Espacio interno */
+padding:20px;
+
+}
+
+
+/* Contenedor donde se organizan los libros */
+.contenedor{
+
+/* Activa Flexbox */
+display:flex;
+
+/* Permite que los elementos pasen a otra línea */
+flex-wrap:wrap;
+
+/* Centra los libros horizontalmente */
+justify-content:center;
+
+/* Espacio entre tarjetas */
+gap:25px;
+
+/* Espacio interno */
+padding:30px;
+
+}
+
+
+/* Tarjeta individual de cada libro */
+.libro{
+
+/* Fondo color crema */
+background-color:#fff8dc;
+
+/* Ancho de la tarjeta */
+width:250px;
+
+/* Espacio interno */
+padding:15px;
+
+/* Bordes redondeados */
+border-radius:12px;
+
+/* Sombra para dar efecto de tarjeta */
+box-shadow:0px 6px 15px rgba(0,0,0,0.2);
+
+/* Centra el contenido */
+text-align:center;
+
+}
+
+
+/* Imagen del libro */
+.libro img{
+
+/* La imagen ocupa todo el ancho de la tarjeta */
+width:100%;
+
+/* Bordes redondeados */
+border-radius:10px;
+
+}
+
+
+/* Título del libro */
+.libro h2{
+
+/* Tipografía decorativa */
+font-family:"Lucida Handwriting", cursive;
+
+/* Color verde */
+color:#6a994e;
+
+/* Tamaño de letra */
+font-size:18px;
+
+}
+
+
+/* Autor del libro */
+.libro h3{
+
+/* Tipografía tipo Papyrus */
+font-family:Papyrus, fantasy;
+
+/* Color café */
+color:#bc6c25;
+
+}
+
+
+/* Reseña del libro */
+.libro p{
+
+/* Tamaño de texto */
+font-size:14px;
+
+/* Color gris oscuro */
+color:#333;
+
+}
+
+
+/* -------- Diseño adaptable para celular -------- */
+
+@media (max-width:768px){
+
+/* Los libros se acomodan en columna */
+.contenedor{
+
+flex-direction:column;
+
+/* Centra los libros */
+align-items:center;
+
+}
+
+/* Las tarjetas ocupan casi toda la pantalla */
+.libro{
+
+width:90%;
+
+}
+
+}
