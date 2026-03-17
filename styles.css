@@ -27,6 +27,84 @@ color:#333;
 
 /* Espaciado entre líneas heredado */
 line-height:1.6;
+/* ---------------------- */
+/* POSITION EN LIBROS */
+/* ---------------------- */
+
+/* Permite posicionar elementos dentro de la tarjeta */
+
+.libro{
+
+position:relative;
+
+}
+
+
+/* Etiqueta recomendada */
+
+.etiqueta{
+
+position:absolute;
+
+top:10px;
+
+left:10px;
+
+background-color:#ffcc00;
+
+padding:5px 10px;
+
+border-radius:8px;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+/* ---------------------- */
+/* BOTÓN FIJO */
+/* ---------------------- */
+
+.boton-arriba{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+background-color:#6a994e;
+
+color:white;
+
+padding:12px 15px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+font-size:20px;
+
+}
+
+
+/* ---------------------- */
+/* HEADER PEGADO */
+/* ---------------------- */
+
+header{
+
+position:sticky;
+
+top:0;
+
+z-index:100;
+
+background-color:#fff3cd;
+
+}
 
 }
 
