@@ -1,162 +1,210 @@
-/* Estilos generales del cuerpo de la página */
+/* ---------------------- */
+/* ESTILOS GENERALES */
+/* ---------------------- */
+
+/* El body actúa como elemento padre */
+/* Muchos estilos se heredan automáticamente */
+
 body{
 
-/* Imagen de fondo tipo biblioteca */
 background-image:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
 
-/* Hace que la imagen cubra toda la pantalla */
 background-size:cover;
 
-/* Hace que el fondo no se mueva con el scroll */
 background-attachment:fixed;
 
-/* Centra la imagen de fondo */
 background-position:center;
 
-/* Elimina márgenes por defecto del navegador */
 margin:0;
 
-/* Elimina padding por defecto */
 padding:0;
 
-/* Fuente base para todo el texto */
+/* Fuente base heredada por la mayoría de elementos */
 font-family:Arial;
+
+/* Color base heredado por textos */
+color:#333;
+
+/* Espaciado entre líneas heredado */
+line-height:1.6;
 
 }
 
 
-/* Estilo del título principal */
+/* ---------------------- */
+/* HEADER */
+/* ---------------------- */
+
 h1{
 
-/* Centra el texto */
 text-align:center;
 
-/* Tipografía del título */
 font-family:Copperplate, serif;
 
-/* Color del texto */
 color:#5d4037;
 
-/* Fondo amarillo pastel */
 background-color:#fff3cd;
 
-/* Espacio interno */
 padding:20px;
 
 }
 
 
-/* Contenedor donde se organizan los libros */
+/* Texto de introducción */
+
+.intro{
+
+text-align:center;
+
+font-size:18px;
+
+max-width:700px;
+
+margin:auto;
+
+margin-bottom:30px;
+
+}
+
+
+/* ---------------------- */
+/* CONTENEDOR DE LIBROS */
+/* ---------------------- */
+
 .contenedor{
 
-/* Activa Flexbox */
 display:flex;
 
-/* Permite que los elementos pasen a otra línea */
 flex-wrap:wrap;
 
-/* Centra los libros horizontalmente */
 justify-content:center;
 
-/* Espacio entre tarjetas */
 gap:25px;
 
-/* Espacio interno */
 padding:30px;
 
 }
 
 
-/* Tarjeta individual de cada libro */
+/* ---------------------- */
+/* TARJETAS DE LIBROS */
+/* ---------------------- */
+
 .libro{
 
-/* Fondo color crema */
 background-color:#fff8dc;
 
-/* Ancho de la tarjeta */
 width:250px;
 
-/* Espacio interno */
 padding:15px;
 
-/* Bordes redondeados */
 border-radius:12px;
 
-/* Sombra para dar efecto de tarjeta */
 box-shadow:0px 6px 15px rgba(0,0,0,0.2);
 
-/* Centra el contenido */
 text-align:center;
 
 }
 
 
 /* Imagen del libro */
+
 .libro img{
 
-/* La imagen ocupa todo el ancho de la tarjeta */
 width:100%;
 
-/* Bordes redondeados */
 border-radius:10px;
 
 }
 
 
 /* Título del libro */
+
 .libro h2{
 
-/* Tipografía decorativa */
 font-family:"Lucida Handwriting", cursive;
 
-/* Color verde */
 color:#6a994e;
 
-/* Tamaño de letra */
 font-size:18px;
 
 }
 
 
-/* Autor del libro */
+/* Autor */
+
 .libro h3{
 
-/* Tipografía tipo Papyrus */
 font-family:Papyrus, fantasy;
 
-/* Color café */
 color:#bc6c25;
 
 }
 
 
-/* Reseña del libro */
+/* Reseña */
+
 .libro p{
 
-/* Tamaño de texto */
 font-size:14px;
-
-/* Color gris oscuro */
-color:#333;
 
 }
 
 
-/* -------- Diseño adaptable para celular -------- */
+/* ---------------------- */
+/* FRASE DE LECTURA */
+/* ---------------------- */
+
+.frase{
+
+text-align:center;
+
+font-size:20px;
+
+font-style:italic;
+
+margin:40px;
+
+background-color:#fff3cd;
+
+padding:20px;
+
+border-radius:10px;
+
+}
+
+
+/* ---------------------- */
+/* FOOTER */
+/* ---------------------- */
+
+footer{
+
+text-align:center;
+
+padding:20px;
+
+background-color:#fff3cd;
+
+margin-top:40px;
+
+}
+
+
+/* ---------------------- */
+/* DISEÑO PARA CELULAR */
+/* ---------------------- */
 
 @media (max-width:768px){
 
-/* Los libros se acomodan en columna */
 .contenedor{
 
 flex-direction:column;
 
-/* Centra los libros */
 align-items:center;
 
 }
 
-/* Las tarjetas ocupan casi toda la pantalla */
 .libro{
 
 width:90%;
