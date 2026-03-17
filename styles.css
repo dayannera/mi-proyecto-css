@@ -2,9 +2,6 @@
 /* ESTILOS GENERALES */
 /* ---------------------- */
 
-/* El body actúa como elemento padre */
-/* Muchos estilos se heredan automáticamente */
-
 body{
 
 background-image:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
@@ -19,79 +16,17 @@ margin:0;
 
 padding:0;
 
-/* Fuente base heredada por la mayoría de elementos */
 font-family:Arial;
 
-/* Color base heredado por textos */
 color:#333;
 
-/* Espaciado entre líneas heredado */
 line-height:1.6;
-/* ---------------------- */
-/* POSITION EN LIBROS */
-/* ---------------------- */
-
-/* Permite posicionar elementos dentro de la tarjeta */
-
-.libro{
-
-position:relative;
-
-}
-
-
-/* Etiqueta recomendada */
-
-.etiqueta{
-
-position:absolute;
-
-top:10px;
-
-left:10px;
-
-background-color:#ffcc00;
-
-padding:5px 10px;
-
-border-radius:8px;
-
-font-size:12px;
-
-font-weight:bold;
 
 }
 
 
 /* ---------------------- */
-/* BOTÓN FIJO */
-/* ---------------------- */
-
-.boton-arriba{
-
-position:fixed;
-
-bottom:20px;
-
-right:20px;
-
-background-color:#6a994e;
-
-color:white;
-
-padding:12px 15px;
-
-border-radius:50%;
-
-text-decoration:none;
-
-font-size:20px;
-
-}
-
-
-/* ---------------------- */
-/* HEADER PEGADO */
+/* HEADER */
 /* ---------------------- */
 
 header{
@@ -106,13 +41,6 @@ background-color:#fff3cd;
 
 }
 
-}
-
-
-/* ---------------------- */
-/* HEADER */
-/* ---------------------- */
-
 h1{
 
 text-align:center;
@@ -121,14 +49,9 @@ font-family:Copperplate, serif;
 
 color:#5d4037;
 
-background-color:#fff3cd;
-
 padding:20px;
 
 }
-
-
-/* Texto de introducción */
 
 .intro{
 
@@ -182,6 +105,8 @@ box-shadow:0px 6px 15px rgba(0,0,0,0.2);
 
 text-align:center;
 
+position:relative;
+
 }
 
 
@@ -230,7 +155,161 @@ font-size:14px;
 
 
 /* ---------------------- */
-/* FRASE DE LECTURA */
+/* ETIQUETA RECOMENDADO */
+/* ---------------------- */
+
+.etiqueta{
+
+position:absolute;
+
+top:10px;
+
+left:10px;
+
+background-color:#ffcc00;
+
+padding:5px 10px;
+
+border-radius:8px;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+/* ---------------------- */
+/* BOTÓN VOLVER ARRIBA */
+/* ---------------------- */
+
+.boton-arriba{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+background-color:#6a994e;
+
+color:white;
+
+padding:12px 15px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+font-size:20px;
+
+}
+
+
+/* ---------------------- */
+/* SECCIÓN CATEGORÍAS */
+/* ---------------------- */
+
+.categorias{
+
+background-color:rgba(255,255,255,0.9);
+
+padding:30px;
+
+margin:40px;
+
+border-radius:12px;
+
+text-align:center;
+
+}
+
+.contenedor-categorias{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+margin-top:20px;
+
+}
+
+.categoria{
+
+background-color:#6a994e;
+
+color:white;
+
+padding:12px 20px;
+
+border-radius:20px;
+
+font-weight:bold;
+
+box-shadow:0px 4px 8px rgba(0,0,0,0.2);
+
+}
+
+
+/* ---------------------- */
+/* SECCIÓN FRASES */
+/* ---------------------- */
+
+.citas{
+
+background-color:rgba(255,255,255,0.9);
+
+padding:30px;
+
+margin:40px;
+
+border-radius:12px;
+
+text-align:center;
+
+}
+
+.contenedor-citas{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:25px;
+
+margin-top:20px;
+
+}
+
+.cita{
+
+background-color:#fff8dc;
+
+padding:20px;
+
+border-radius:10px;
+
+width:220px;
+
+box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+
+font-style:italic;
+
+}
+
+
+/* ---------------------- */
+/* FRASE DESTACADA */
 /* ---------------------- */
 
 .frase{
@@ -270,10 +349,31 @@ margin-top:40px;
 
 
 /* ---------------------- */
-/* DISEÑO PARA CELULAR */
+/* RESPONSIVE TABLETS */
 /* ---------------------- */
 
-@media (max-width:768px){
+@media (max-width:900px){
+
+.libro{
+
+width:45%;
+
+}
+
+h1{
+
+font-size:28px;
+
+}
+
+}
+
+
+/* ---------------------- */
+/* RESPONSIVE CELULAR */
+/* ---------------------- */
+
+@media (max-width:600px){
 
 .contenedor{
 
@@ -289,102 +389,37 @@ width:90%;
 
 }
 
-/* ---------------------- */
-/* FLEXBOX PARA CATEGORÍAS */
-/* ---------------------- */
+h1{
 
-.categorias{
-
-text-align:center;
-
-margin:40px;
+font-size:24px;
 
 }
 
-/* Contenedor Flexbox */
+.libro p{
 
-.contenedor-categorias{
-
-display:flex;
-
-/* centra horizontalmente */
-justify-content:center;
-
-/* centra verticalmente */
-align-items:center;
-
-/* permite que bajen de línea */
-flex-wrap:wrap;
-
-/* espacio entre elementos */
-gap:20px;
-
-margin-top:20px;
+font-size:13px;
 
 }
 
-/* Tarjetas de categoría */
-
-.categoria{
-
-background-color:#6a994e;
-
-color:white;
-
-padding:12px 20px;
-
-border-radius:20px;
-
-font-weight:bold;
-
 }
+
+
 /* ---------------------- */
-/* ALINEACIÓN CON FLEXBOX */
+/* PANTALLAS GRANDES */
 /* ---------------------- */
 
-.citas{
+@media (min-width:1200px){
 
-text-align:center;
+.contenedor{
 
-margin:40px;
-
-}
-
-/* Contenedor flex */
-
-.contenedor-citas{
-
-display:flex;
-
-/* centra horizontalmente */
-justify-content:center;
-
-/* centra verticalmente */
-align-items:center;
-
-/* espacio entre elementos */
-gap:25px;
-
-/* permite varias líneas */
-flex-wrap:wrap;
-
-margin-top:20px;
+gap:40px;
 
 }
 
-/* tarjeta de cita */
+.libro{
 
-.cita{
-
-background-color:#fff8dc;
-
-padding:20px;
-
-border-radius:10px;
-
-width:220px;
-
-box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+width:280px;
 
 }
+
 }
