@@ -260,4 +260,53 @@ border-radius:20px;
 font-weight:bold;
 
 }
+/* ---------------------- */
+/* ALINEACIÓN CON FLEXBOX */
+/* ---------------------- */
+
+.citas{
+
+text-align:center;
+
+margin:40px;
+
+}
+
+/* Contenedor flex */
+
+.contenedor-citas{
+
+display:flex;
+
+/* centra horizontalmente */
+justify-content:center;
+
+/* centra verticalmente */
+align-items:center;
+
+/* espacio entre elementos */
+gap:25px;
+
+/* permite varias líneas */
+flex-wrap:wrap;
+
+margin-top:20px;
+
+}
+
+/* tarjeta de cita */
+
+.cita{
+
+background-color:#fff8dc;
+
+padding:20px;
+
+border-radius:10px;
+
+width:220px;
+
+box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+
+}
 }
